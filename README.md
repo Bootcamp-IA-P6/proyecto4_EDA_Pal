@@ -451,14 +451,6 @@ Este proyecto sirve como **plantilla y referencia** para:
 - Proyectos de visualización de datos
 - Informes ejecutivos basados en datos
 
----
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia **MIT**. Ver el archivo `LICENSE` para más detalles.
-
----
-
 ## 🤝 Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
