@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 COVID-19 EDA Dashboard - Estados Unidos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .dashboard-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            color: #6c757d;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .main-dashboard-link {
+            display: block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+        .main-dashboard-link:hover {
+            transform: scale(1.05);
+            text-decoration: none;
+            color: white;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #e8f4fd;
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .stat-label {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+        }
+        .github-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .github-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 COVID-19 Análisis Exploratorio</h1>
+        <p class="subtitle">Dashboard Interactivo - Estados Unidos (2020-2023)</p>
+        
+        <a href="images/interactive_dashboard.html" class="main-dashboard-link">
+            🚀 Ver Dashboard Interactivo Completo
+        </a>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-icon">📈</div>
+                <div class="card-title">Evolución Temporal</div>
+                <div class="card-description">
+                    Visualización interactiva de la evolución de casos, muertes y tendencias temporales
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-icon">🗺️</div>
+                <div class="card-title">Análisis por Estados</div>
+                <div class="card-description">
+                    Comparación entre los 50 estados con rankings y métricas per cápita
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-icon">🔗</div>
+                <div class="card-title">Correlaciones</div>
+                <div class="card-description">
+                    Scatter plots interactivos mostrando relaciones entre variables clave
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-icon">🏆</div>
+                <div class="card-title">Rankings Top 15</div>
+                <div class="card-description">
+                    Estados más impactados por diferentes métricas epidemiológicas
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">103M+</div>
+                <div class="stat-label">Casos Analizados</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1.1M+</div>
+                <div class="stat-label">Datos de Muertes</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">52</div>
+                <div class="stat-label">Estados + DC</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3+ Años</div>
+                <div class="stat-label">Período Analizado</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                📊 Proyecto de Análisis Exploratorio de Datos (EDA) desarrollado en Python<br/>
+                🔬 Metodología científica con visualizaciones interactivas<br/>
+                🌐 Código disponible en 
+                <a href="https://github.com/Pal-cloud/proyecto4_EDA_Pal" class="github-link">GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
