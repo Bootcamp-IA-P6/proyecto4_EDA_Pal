@@ -2,7 +2,27 @@
 
 ## 🎯 Descripción del Proyecto
 
-Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Unidos, utilizando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2021. 
+Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Uni3. **Instalar dependencias**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Ejecutar el análisis completo**
+   ```bash
+   # Notebook interactivo
+   jupyter notebook notebooks/covid19_eda_analysis.ipynb
+   
+   # Script optimizado con 4 visualizaciones esenciales
+   python covid19_optimized_eda.py
+   ```
+
+5. **Generar informe PDF ejecutivo**
+   ```bash
+   python generate_pdf_report.py
+   ```
+   **📄 Output:** `reports/COVID19_Executive_Report.pdf` (Informe completo con estadísticas y visualizaciones)
+
+### 🎯 Exploración del Análisisando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2021. 
 
 El análisis se basa en datos públicos confiables obtenidos a través de APIs especializadas y proporciona una **base sólida para la toma de decisiones estratégicas** con visualizaciones impactantes y conclusiones respaldadas por evidencia estadística.
 
@@ -140,8 +160,11 @@ proyecto4_EDA_Pal/
 │   ├── correlation_heatmap.png # Mapa de correlaciones entre variables
 │   ├── states_rankings.png     # Rankings comparativos por estado
 │   └── interactive_dashboard.html # Dashboard interactivo ejecutivo
-├── 📋 requirements.txt         # Dependencias del proyecto
+├── � reports/                 # Informes generados automáticamente
+│   └── COVID19_Executive_Report.pdf # Informe ejecutivo completo
+├── �📋 requirements.txt         # Dependencias del proyecto
 ├── 🔧 .gitignore              # Configuración Git
+├── 🐍 generate_pdf_report.py   # Generador de informe PDF ejecutivo
 └── 📖 README.md               # Este archivo
 ```
 
@@ -333,6 +356,46 @@ Este análisis demuestra cómo las técnicas de **ciencia de datos** pueden:
 - ✅ Proporcionar evidencia para toma de decisiones
 - ✅ Generar visualizaciones que comunican efectivamente
 - ✅ Establecer bases para análisis predictivos futuros
+
+---
+
+## 📄 INFORME EJECUTIVO PDF
+
+### Generación Automática de Reportes
+
+Este proyecto incluye un **generador automático de informes PDF** profesionales diseñado para presentaciones ejecutivas y reportes formales.
+
+#### 🚀 Generar Informe PDF
+
+```bash
+# Activar entorno virtual
+.venv\Scripts\activate
+
+# Generar informe PDF completo
+python generate_pdf_report.py
+```
+
+#### 📋 Contenido del Informe PDF
+
+El informe generado incluye:
+
+- **📊 Portada profesional** con información del proyecto
+- **🎯 Resumen ejecutivo** con hallazgos clave
+- **📈 Estadísticas principales** calculadas automáticamente
+- **🖼️ Visualizaciones integradas** (todas las gráficas del análisis)
+- **🔍 Análisis detallado** de cada visualización
+- **💡 Conclusiones y recomendaciones** basadas en datos
+- **🛠️ Información técnica** y metodológica
+
+#### ✨ Características del PDF
+
+- **Formato profesional** listo para presentaciones ejecutivas
+- **Diseño responsive** optimizado para impresión y pantalla
+- **Generación automática** que incluye estadísticas en tiempo real
+- **Integración completa** de visualizaciones y análisis
+- **Estructura empresarial** siguiendo estándares de reporting
+
+**📁 Ubicación:** `reports/COVID19_Executive_Report.pdf`
 
 ---
 
