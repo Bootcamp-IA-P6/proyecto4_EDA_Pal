@@ -67,6 +67,8 @@ venv.bak/
 # VS Code
 .vscode/
 *.code-workspace
+# Allow VS Code settings for better development experience
+!.vscode/settings.json
 
 # macOS
 .DS_Store
