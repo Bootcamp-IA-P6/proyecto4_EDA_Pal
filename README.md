@@ -135,13 +135,11 @@ proyecto4_EDA_Pal/
 │   └── states_clean.csv        # Datos por estados
 ├── 📓 notebooks/               # Jupyter notebooks con análisis
 │   └── covid19_eda_analysis.ipynb # Notebook principal completo
-├── 🖼️ images/                 # Visualizaciones generadas
-│   ├── temporal_evolution.png  # Evolución temporal
-│   ├── pandemic_phases.png     # Análisis por fases
-│   ├── states_rankings.png     # Rankings de estados
-│   ├── regional_analysis.png   # Comparación regional
-│   ├── correlation_heatmap.png # Mapa de correlaciones
-│   └── relationship_analysis.png # Análisis de relaciones
+├── 🖼️ images/                 # Visualizaciones esenciales optimizadas
+│   ├── temporal_evolution.png  # Evolución temporal de la pandemia
+│   ├── correlation_heatmap.png # Mapa de correlaciones entre variables
+│   ├── states_rankings.png     # Rankings comparativos por estado
+│   └── interactive_dashboard.html # Dashboard interactivo ejecutivo
 ├── 📋 requirements.txt         # Dependencias del proyecto
 ├── 🔧 .gitignore              # Configuración Git
 └── 📖 README.md               # Este archivo
