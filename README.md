@@ -88,6 +88,44 @@ Este proyecto demuestra cómo el análisis de datos puede convertir información
 
 ---
 
+## 🎓 Mini Guía Resumida para Principiantes en Análisis Exploratorio de Datos (EDA)
+
+### 🔍 ¿Qué es el EDA?
+El EDA consiste en **explorar y entender los datos antes de modelar**.
+
+> Se usan `estadísticas simples` (media, frecuencias) + con ayuda de `gráficos` (boxplots, mapas de calor) se buscan `valores atípicos` (outliers: IQR/Z-score) + `relaciones entre variables` (correlaciones).
+
+### 🧹 Paso 1: Preparación de Datos
+> 👉 Primero cargamos datos, después los miramos y limpiamos tipos de datos y valores nulos.
+
+### 📊 Paso 2: Análisis Univariado (Una sola variable)
+
+#### 👉 `Estadísticas simples`
+- **Media y frecuencias:** resumen estadístico para entender **cómo se distribuyen los datos.**
+  
+  Si media y mediana difieren mucho, suele indicar asimetría en la distribución
+  
+  **Gráficos 👁‍🗨: Histogramas**
+
+#### 👉 `Valores atípicos`
+- **Detección de Outliers (IQR):** detecta valores demasiado bajos o altos
+  
+  **Gráficos 👁‍🗨: Boxplot:** muestra distribución y outliers visualmente.
+
+### 🔗 Paso 3: Análisis Bivariado (Relación entre dos variables)
+
+#### 👉 `Correlaciones`
+- **Correlaciones (corr):** valores numéricos de -1 a 1 (qué tanto se relacionan).
+  
+  **Gráficos 👁‍🗨: Heatmap:** enseña cómo se relacionan todas las variables numéricas.
+  
+  **Scatter plot:** Para ver la relación punto a punto entre dos variables.
+
+### 💻 Herramientas en Código
+> En code: `Pandas` + `Seaborn` + `Matplotlib`
+
+---
+
 ## 📁 Estructura del Proyecto
 
 ```
