@@ -22,6 +22,41 @@ Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de 
    ```
    **📄 Output:** `reports/COVID19_Executive_Report.pdf` (Informe completo con estadísticas y visualizaciones)
 
+### 📄 Cómo Visualizar el Informe PDF
+
+**⚠️ Importante:** Los archivos PDF son documentos binarios. Si los abres como texto en VS Code, verás código interno del PDF, no el contenido legible.
+
+**✅ Formas correctas de ver el PDF:**
+
+#### **Opción 1: VS Code (Recomendado)**
+```bash
+# Abrir en el visualizador de PDF integrado de VS Code
+code reports/COVID19_Executive_Report.pdf
+```
+
+#### **Opción 2: Navegador Web**
+```bash
+# Windows
+start reports/COVID19_Executive_Report.pdf
+
+# macOS  
+open reports/COVID19_Executive_Report.pdf
+
+# Linux
+xdg-open reports/COVID19_Executive_Report.pdf
+```
+
+#### **Opción 3: Visor Simple Browser de VS Code**
+- En VS Code: `Ctrl+Shift+P` → "Simple Browser: Show"
+- Navegar a: `file:///ruta-completa/proyecto4_EDA_Pal/reports/COVID19_Executive_Report.pdf`
+
+**📊 El PDF incluye:**
+- 📋 Portada profesional con información del proyecto
+- 📈 Estadísticas clave y métricas principales  
+- 🖼️ Las 4 visualizaciones esenciales integradas
+- 📄 Metodología detallada y conclusiones ejecutivas
+- 🔧 Información técnica y limitaciones del análisis
+
 ### 🎯 Exploración del Análisisando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2021. 
 
 El análisis se basa en datos públicos confiables obtenidos a través de APIs especializadas y proporciona una **base sólida para la toma de decisiones estratégicas** con visualizaciones impactantes y conclusiones respaldadas por evidencia estadística.
