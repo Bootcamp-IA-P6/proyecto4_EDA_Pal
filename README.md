@@ -337,7 +337,142 @@ xdg-open images/interactive_dashboard.html # Linux
 
 ---
 
-## 💡 INSIGHTS PARA LA TOMA DE DECISIONES
+## �️ CREACIÓN DEL DASHBOARD INTERACTIVO
+
+### 🚀 Tecnología y Herramientas Utilizadas
+
+El dashboard interactivo (`interactive_dashboard.html`) fue desarrollado utilizando **Python** con la librería **Plotly**, una de las bibliotecas más potentes para visualizaciones interactivas en ciencia de datos.
+
+#### 📚 Librerías Principales
+```python
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import pandas as pd
+import numpy as np
+```
+
+### 🔧 Proceso de Creación
+
+#### **1. 📊 Estructura Multi-Panel**
+El dashboard utiliza `make_subplots()` de Plotly para crear una cuadrícula 2x2 con 4 visualizaciones integradas:
+
+```python
+fig = make_subplots(
+    rows=2, cols=2,
+    subplot_titles=('Evolución Temporal de Casos', 'Distribución por Estados', 
+                   'Correlación Casos vs Muertes', 'Ranking Top 15 Estados'),
+    specs=[[{"secondary_y": False}, {"secondary_y": False}],
+           [{"secondary_y": False}, {"secondary_y": False}]]
+)
+```
+
+#### **2. 📈 Visualizaciones Implementadas**
+
+**Panel 1 - Evolución Temporal:**
+- **Tipo:** `go.Scatter()` con línea temporal
+- **Datos:** Serie temporal de casos acumulados diarios
+- **Características:** Línea suavizada con interactividad completa
+
+**Panel 2 - Top Estados:**
+- **Tipo:** `go.Bar()` con orientación horizontal
+- **Datos:** Top 15 estados ordenados por casos totales
+- **Características:** Barras interactivas con colores diferenciados
+
+**Panel 3 - Scatter Plot:**
+- **Tipo:** `go.Scatter()` en modo markers
+- **Datos:** Correlación casos vs muertes por estado
+- **Características:** Tooltips con nombres de estados, marcadores personalizados
+
+**Panel 4 - Casos per Cápita:**
+- **Tipo:** `go.Bar()` horizontal
+- **Datos:** Ranking por casos por millón de habitantes
+- **Características:** Normalización por población para comparación justa
+
+#### **3. ⚡ Configuración de Interactividad**
+
+```python
+fig.update_layout(
+    title_text="📊 DASHBOARD INTERACTIVO COVID-19 - ESTADOS UNIDOS",
+    title_x=0.5,
+    title_font_size=20,
+    height=800,
+    showlegend=True
+)
+```
+
+**Funcionalidades Interactivas Habilitadas:**
+- **🔍 Zoom dinámico:** Click y arrastre para ampliar áreas específicas
+- **📍 Pan:** Arrastre para navegar por diferentes secciones
+- **💡 Tooltips:** Información contextual al pasar el mouse
+- **📷 Descarga:** Exportación de gráficos como imágenes PNG
+- **🔄 Reset:** Doble-click para restablecer vista original
+- **👁 Toggle:** Activar/desactivar series en la leyenda
+
+#### **4. 💾 Generación del Archivo HTML**
+
+```python
+fig.write_html('images/interactive_dashboard.html')
+```
+
+**El comando `write_html()` genera:**
+- ✅ Archivo HTML completamente autónomo
+- ✅ JavaScript de Plotly embebido (v3.3.1)
+- ✅ Todos los datos integrados en el archivo
+- ✅ Funcionalidad completa sin dependencias externas
+- ✅ Optimizado para navegadores modernos
+
+### 🎯 Ventajas de Plotly vs Otras Librerías
+
+| Característica | Plotly | Matplotlib | Seaborn |
+|---------------|---------|------------|---------|
+| **Interactividad** | ✅ Nativa | ❌ Limitada | ❌ Estática |
+| **Web Ready** | ✅ HTML directo | ⚠️ Conversión | ❌ No |
+| **Zoom/Pan** | ✅ Built-in | ⚠️ Widgets | ❌ No |
+| **Tooltips** | ✅ Automático | ❌ Manual | ❌ No |
+| **Responsive** | ✅ Adaptativo | ⚠️ Limitado | ❌ Fijo |
+| **Multi-panel** | ✅ `subplots` | ✅ `subplots` | ⚠️ `FacetGrid` |
+
+### 📁 Archivos Relacionados
+
+```
+proyecto4_EDA_Pal/
+├── covid19_optimized_eda.py      # 🐍 Script principal que genera el dashboard
+├── covid19_complete_eda.py       # 🐍 Versión extendida con más visualizaciones  
+└── images/
+    └── interactive_dashboard.html # 📊 Dashboard final (3,888 líneas de código)
+```
+
+### 🚀 Cómo se Ejecuta
+
+**Opción 1: Script Optimizado (recomendado)**
+```bash
+python covid19_optimized_eda.py
+```
+
+**Opción 2: Script Completo**
+```bash
+python covid19_complete_eda.py
+```
+
+**Opción 3: Notebook Interactivo**
+```bash
+jupyter notebook notebooks/covid19_eda_analysis.ipynb
+```
+
+> **💡 Tip:** El dashboard se genera automáticamente al ejecutar cualquiera de los scripts de análisis. El archivo HTML resultante es completamente portátil y puede abrirse en cualquier navegador web moderno.
+
+### 🔍 Detalles Técnicos
+
+- **📊 Tamaño del archivo:** ~3,888 líneas de código HTML/JavaScript
+- **⚡ Librería embebida:** Plotly.js v3.3.1 (completa)
+- **🎨 Responsive:** Adaptable a diferentes tamaños de pantalla
+- **🌐 Compatibilidad:** Navegadores modernos (Chrome, Firefox, Safari, Edge)
+- **📱 Mobile:** Optimizado para dispositivos táctiles
+- **⚡ Rendimiento:** Carga rápida con datos pre-procesados
+
+---
+
+## �💡 INSIGHTS PARA LA TOMA DE DECISIONES
 
 ### 🚨 Factores Críticos Identificados
 
