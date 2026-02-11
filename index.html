@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 COVID-19 EDA Dashboard - Estados Unidos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            max-width: 600px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+        p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .dashboard-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin: 10px;
+        }
+        .dashboard-link:hover {
+            transform: scale(1.05);
+            text-decoration: none;
+            color: white;
+        }
+        .stats {
+            margin: 30px 0;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .loading {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Redirección automática después de 3 segundos
+        setTimeout(function() {
+            window.location.href = 'images/interactive_dashboard.html';
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 COVID-19 EDA Dashboard</h1>
+        <p><strong>Análisis Exploratorio de Datos - Estados Unidos</strong></p>
+        <p>Dashboard interactivo con visualizaciones de la pandemia COVID-19 basado en datos de Johns Hopkins University.</p>
+        
+        <a href="images/interactive_dashboard.html" class="dashboard-link">
+            🚀 Ver Dashboard Interactivo
+        </a>
+        
+        <div class="stats">
+            <p>📊 4 Visualizaciones Interactivas | 📈 103M+ Casos Analizados | 🗺️ 52 Estados</p>
+        </div>
+        
+        <div class="loading">
+            ⏱️ Redirigiendo automáticamente en 3 segundos...
+        </div>
+    </div>
+</body>
+</html>
