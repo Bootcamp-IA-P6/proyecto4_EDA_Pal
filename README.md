@@ -2,15 +2,18 @@
 
 ## 🎯 Descripción del Proyecto
 
-Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Uni3. **Instalar dependencias**
+Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Unidos, utilizando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2023.3. **Instalar dependencias**
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Ejecutar el análisis completo**
    ```bash
-   # Notebook interactivo
+   # Notebook interactivo (recomendado)
    jupyter notebook notebooks/covid19_eda_analysis.ipynb
+   
+   # Script completo con todas las visualizaciones
+   python covid19_complete_eda.py
    
    # Script optimizado con 4 visualizaciones esenciales
    python covid19_optimized_eda.py
@@ -22,7 +25,38 @@ Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de 
    ```
    **📄 Output:** `reports/COVID19_Executive_Report.pdf` (Informe completo con estadísticas y visualizaciones)
 
-### 🎯 Exploración del Análisisando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2021. 
+### 📄 Cómo Visualizar el Informe PDF
+
+**⚠️ Importante:** Los archivos PDF son documentos binarios. Si los abres como texto en VS Code, verás código interno del PDF, no el contenido legible.
+
+**✅ Formas correctas de ver el PDF:**
+
+#### **Opción 1: VS Code (Recomendado)**
+```bash
+# Abrir en el visualizador de PDF integrado de VS Code
+code reports/COVID19_Executive_Report.pdf
+```
+
+#### **Opción 2: Navegador Web**
+```bash
+# Windows
+start reports/COVID19_Executive_Report.pdf
+
+# macOS  
+open reports/COVID19_Executive_Report.pdf
+
+# Linux
+xdg-open reports/COVID19_Executive_Report.pdf
+```
+
+**📊 El PDF incluye:**
+- 📋 Portada profesional con información del proyecto
+- 📈 Estadísticas clave y métricas principales  
+- 🖼️ Las 4 visualizaciones esenciales integradas
+- 📄 Metodología detallada y conclusiones ejecutivas
+- 🔧 Información técnica y limitaciones del análisis
+
+### 🎯 Descripción del Proyecto 
 
 El análisis se basa en datos públicos confiables obtenidos a través de APIs especializadas y proporciona una **base sólida para la toma de decisiones estratégicas** con visualizaciones impactantes y conclusiones respaldadas por evidencia estadística.
 
@@ -160,12 +194,15 @@ proyecto4_EDA_Pal/
 │   ├── correlation_heatmap.png # Mapa de correlaciones entre variables
 │   ├── states_rankings.png     # Rankings comparativos por estado
 │   └── interactive_dashboard.html # Dashboard interactivo ejecutivo
-├── � reports/                 # Informes generados automáticamente
+├── 📄 reports/                 # Informes generados automáticamente
 │   └── COVID19_Executive_Report.pdf # Informe ejecutivo completo
-├── �📋 requirements.txt         # Dependencias del proyecto
-├── 🔧 .gitignore              # Configuración Git
-├── 🐍 generate_pdf_report.py   # Generador de informe PDF ejecutivo
-└── 📖 README.md               # Este archivo
+├── � Scripts de análisis/      # Scripts Python especializados
+│   ├── covid19_complete_eda.py     # Script completo con todas las visualizaciones
+│   ├── covid19_optimized_eda.py   # Script optimizado (4 visualizaciones esenciales)
+│   └── generate_pdf_report.py     # Generador de informe PDF ejecutivo
+├── 📋 requirements.txt         # Dependencias del proyecto
+├── 🔧 .gitignore & .vscode/    # Configuración de desarrollo
+└── 📖 README.md               # Este archivo (documentación completa)
 ```
 
 ---
@@ -258,6 +295,26 @@ El notebook está organizado en **9 secciones principales**:
 - **🎯 Scatter plots interactivos** - Comparación multivariable entre estados
 - **📊 Gráficos de barras dinámicos** - Rankings ajustables por diferentes métricas
 - **🔍 Herramientas de exploración** - Tooltips informativos y filtros
+
+### 🌐 Acceso al Dashboard Interactivo
+
+**📱 Visualizar el Dashboard:**
+```bash
+# Opción 1: Navegador web (recomendado)
+start images/interactive_dashboard.html    # Windows
+open images/interactive_dashboard.html     # macOS
+xdg-open images/interactive_dashboard.html # Linux
+
+# Opción 2: VS Code Simple Browser
+# Ctrl+Shift+P → "Simple Browser: Show" 
+# Navegar a: file:///ruta-completa/images/interactive_dashboard.html
+```
+
+**📊 El dashboard incluye 4 visualizaciones interactivas:**
+- ✅ **Zoom y Pan** habilitados en todos los gráficos
+- ✅ **Tooltips informativos** al pasar el mouse  
+- ✅ **Descarga de imágenes** (botón de cámara en cada gráfico)
+- ✅ **Reset de vista** (doble click en cualquier gráfico)
 
 ---
 
