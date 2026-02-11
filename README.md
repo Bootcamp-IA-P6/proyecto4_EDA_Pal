@@ -2,7 +2,23 @@
 
 ## 🎯 Descripción del Proyecto
 
-Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Unidos, utilizando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evolución de la pandemia durante 2020-2023.3. **Instalar dependencias**
+Este proyecto presenta un **análisis exploratorio exhaustivo** de los datos de COVID-19 en Estados Unidos, utilizando técnicas avanzadas de ciencia de datos para extraer insights valiosos sobre la evoluc**🌍**📱 Visualizar el Dashboard Localmente:**
+```bash
+# Opción 1: Página principal (recomendado)
+start index.html                          # Windows - Página de bienvenida
+open index.html                           # macOS - Página de bienvenida
+xdg-open index.html                       # Linux - Página de bienvenida
+
+# Opción 2: Dashboard directo
+start images/interactive_dashboard.html    # Windows - Dashboard directo
+open images/interactive_dashboard.html     # macOS - Dashboard directo
+xdg-open images/interactive_dashboard.html # Linux - Dashboard directo
+
+# Opción 3: VS Code Simple Browser
+# Ctrl+Shift+P → "Simple Browser: Show" 
+# Navegar a: file:///ruta-completa/index.html
+```Público Online:**
+> **🌐 [Ver Dashboard Interactivo en Vivo](https://bootcamp-ia-p6.github.io/proyecto4_EDA_Pal/)**n de la pandemia durante 2020-2023.3. **Instalar dependencias**
    ```bash
    pip install -r requirements.txt
    ```
