@@ -241,7 +241,7 @@ proyecto4_EDA_Pal/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/Pal-cloud/proyecto4_EDA_Pal.git
+   git clone https://github.com/Bootcamp-IA-P6/proyecto4_EDA_Pal.git
    cd proyecto4_EDA_Pal
    ```
 
