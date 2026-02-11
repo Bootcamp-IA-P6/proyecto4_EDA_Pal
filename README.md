@@ -298,7 +298,10 @@ El notebook está organizado en **9 secciones principales**:
 
 ### 🌐 Acceso al Dashboard Interactivo
 
-**📱 Visualizar el Dashboard:**
+**🌍 Dashboard Público Online:**
+> **� [Ver Dashboard Interactivo en Vivo](https://bootcamp-ia-p6.github.io/proyecto4_EDA_Pal/images/interactive_dashboard.html)**
+
+**�📱 Visualizar el Dashboard Localmente:**
 ```bash
 # Opción 1: Navegador web (recomendado)
 start images/interactive_dashboard.html    # Windows

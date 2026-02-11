@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=images/interactive_dashboard.html">
     <title>📊 COVID-19 EDA Dashboard - Estados Unidos</title>
     <style>
         body {
@@ -63,10 +64,12 @@
         }
     </style>
     <script>
-        // Redirección automática después de 3 segundos
+        // Redirección inmediata y como respaldo
+        window.location.href = 'images/interactive_dashboard.html';
+        // También programar redirección después de 1 segundo como respaldo
         setTimeout(function() {
             window.location.href = 'images/interactive_dashboard.html';
-        }, 3000);
+        }, 1000);
     </script>
 </head>
 <body>
@@ -84,7 +87,7 @@
         </div>
         
         <div class="loading">
-            ⏱️ Redirigiendo automáticamente en 3 segundos...
+            🚀 Redirigiendo automáticamente al dashboard...
         </div>
     </div>
 </body>
